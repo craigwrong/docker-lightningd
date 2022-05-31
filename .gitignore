@@ -1,0 +1,7 @@
+.DS_Store
+/.gitconfig/user
+xcuserdata/
+/sandbox/sample.lightning/lightningd-regtest.pid
+/sandbox/sample.lightning/regtest
+/sandbox/sample.bitcoin/lightningd-regtest.pid
+/sandbox/sample.bitcoin/regtest
