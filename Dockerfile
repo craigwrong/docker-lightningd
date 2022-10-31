@@ -7,5 +7,6 @@ RUN \
     apt-get install -y --no-install-recommends gpg-agent software-properties-common && \
     add-apt-repository -y -u ppa:lightningnetwork/ppa && \
         apt-get -y install --no-install-recommends lightningd
+COPY docker-entrypoint.sh /root/bin/docker-entrypoint.sh
 VOLUME /root/.lightning
-ENTRYPOINT ["/usr/bin/lightningd"]
+ENTRYPOINT ["/root/bin/user-entrypoint.sh"]
